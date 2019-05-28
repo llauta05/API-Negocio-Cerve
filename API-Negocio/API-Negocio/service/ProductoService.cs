@@ -38,6 +38,12 @@ namespace API_Negocio.service
         {
             _productos.ReplaceOne(Producto => Producto.Id == id, ProductoIn);
         }
+        public Producto Update(Producto ProductoIn)
+        {
+            var id = ProductoIn.Id;
+            _productos.ReplaceOne(Producto => Producto.Id == id, ProductoIn);
+            return _productos.Find<Producto>(Producto => Producto.Id == id).FirstOrDefault();
+        }
 
         public bool Remove(Producto ProductoIn)
         {

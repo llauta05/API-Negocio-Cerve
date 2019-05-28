@@ -40,9 +40,16 @@ namespace API_Negocio.Controllers
         }
         [HttpPost]
         [Route("Delete/")]
-        public ActionResult<Producto> Delete(Producto producto)
+        public ActionResult<bool> Delete(Producto producto)
         {
-            return _productoService.Remove(producto);
+            return _productoService.Remove(producto.Id);
+        }
+
+        [HttpPut]
+        [Route("Update/")]
+        public ActionResult<Producto> Update(Producto producto)
+        {
+            return _productoService.Update(producto);
         }
     }
 }
