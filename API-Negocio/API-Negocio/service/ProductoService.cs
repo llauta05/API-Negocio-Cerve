@@ -39,14 +39,16 @@ namespace API_Negocio.service
             _productos.ReplaceOne(Producto => Producto.Id == id, ProductoIn);
         }
 
-        public void Remove(Producto ProductoIn)
+        public bool Remove(Producto ProductoIn)
         {
             _productos.DeleteOne(Producto => Producto.Id == ProductoIn.Id);
+            return true;
         }
 
-        public void Remove(string id)
+        public bool Remove(string id)
         {
             _productos.DeleteOne(Producto => Producto.Id == id);
+            return true;
         }
     }
 }
