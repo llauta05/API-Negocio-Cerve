@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API_Negocio.model;
+using API_Negocio.service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API_Negocio.Controllers
@@ -10,12 +12,25 @@ namespace API_Negocio.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        private readonly ProductoService _productoService;
+
+        public ValuesController(ProductoService productoService)
         {
-            return new string[] { "value1", "asdsssss" };
+            _productoService = productoService;
         }
+
+        [HttpGet]
+        public ActionResult<List<Producto>> Get()
+        {
+            return _productoService.Get();
+        }
+
+        //// GET api/values
+        //[HttpGet]
+        //public ActionResult<IEnumerable<string>> Get()
+        //{
+        //    return new string[] { "value1", "asdsssss" };
+        //}
 
         // GET api/values/5
         [HttpGet("{id}")]
