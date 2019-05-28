@@ -14,7 +14,7 @@ namespace API_Negocio.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "asdasdas" };
+            return new string[] { "value1", "asdsssss" };
         }
 
         // GET api/values/5
