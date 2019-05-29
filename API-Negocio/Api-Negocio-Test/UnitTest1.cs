@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace Api_Negocio_Test
 {
@@ -8,6 +9,7 @@ namespace Api_Negocio_Test
         [TestMethod]
         public void TestMethod1()
         {
+            Console.WriteLine("algo");
         }
     }
 }

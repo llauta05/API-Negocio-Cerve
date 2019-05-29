@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "c7ee97c2d12205a5151f255d5b8f51d5fd09cbf9"
+    "signature": "7a8e4797cf3d3a30875b535421442eeba96532ea"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.2": {
       "API-Negocio/1.0.0": {
         "dependencies": {
+          "Aggregates.NET": "0.15.15.871",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
@@ -34,6 +35,20 @@
         },
         "compile": {
           "API-Negocio.dll": {}
+        }
+      },
+      "Aggregates.NET/0.15.15.871": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aggregates.NET.dll": {
+            "assemblyVersion": "0.15.1.0",
+            "fileVersion": "0.15.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Aggregates.NET.dll": {}
         }
       },
       "DnsClient/1.2.0": {
@@ -3582,6 +3597,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Aggregates.NET/0.15.15.871": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jh1aR2ec+MbgV4Jfl4AnDB6PGut6BYcPRHm/uBgJBldZjKsdjmcXb4DMZFWi+Wiuhgcib0PVYIfMZ8Q8MhTdAA==",
+      "path": "aggregates.net/0.15.15.871",
+      "hashPath": "aggregates.net.0.15.15.871.nupkg.sha512"
     },
     "DnsClient/1.2.0": {
       "type": "package",
