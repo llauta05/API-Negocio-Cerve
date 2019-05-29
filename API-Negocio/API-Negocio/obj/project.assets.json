@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "Aggregates.NET/0.15.15.871": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Aggregates.NET.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aggregates.NET.dll": {}
+        }
+      },
       "DnsClient/1.2.0": {
         "type": "package",
         "dependencies": {
@@ -4803,6 +4815,19 @@
     }
   },
   "libraries": {
+    "Aggregates.NET/0.15.15.871": {
+      "sha512": "jh1aR2ec+MbgV4Jfl4AnDB6PGut6BYcPRHm/uBgJBldZjKsdjmcXb4DMZFWi+Wiuhgcib0PVYIfMZ8Q8MhTdAA==",
+      "type": "package",
+      "path": "aggregates.net/0.15.15.871",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aggregates.net.0.15.15.871.nupkg.sha512",
+        "aggregates.net.nuspec",
+        "lib/netstandard2.0/Aggregates.NET.dll",
+        "lib/netstandard2.0/Aggregates.NET.pdb"
+      ]
+    },
     "DnsClient/1.2.0": {
       "sha512": "P34wUkeqU4FoQiOMV8OjpdeDZKs4d3r+VlHuKJ6eO5feiZgna3+9MF5orHRUn3DAv1g/HPE5hlkGucmxmsFfBw==",
       "type": "package",
@@ -13025,6 +13050,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Aggregates.NET >= 0.15.15.871",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
@@ -13075,6 +13101,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "Aggregates.NET": {
+            "target": "Package",
+            "version": "[0.15.15.871, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",

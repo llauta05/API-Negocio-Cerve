@@ -47,7 +47,7 @@ namespace API_Negocio.Controllers
 
         [HttpPut]
         [Route("Update/")]
-        public ActionResult<Producto> Update(Producto producto)
+        public ActionResult<bool> Update(Producto producto)
         {
             return _productoService.Update(producto);
         }

@@ -1,4 +1,5 @@
-﻿using API_Negocio.model;
+﻿using Aggregates;
+using API_Negocio.model;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using System;
@@ -20,41 +21,92 @@ namespace API_Negocio.service
         }
         public List<Producto> Get()
         {
-            return _productos.Find(Producto => true).ToList();
+            try
+            {
+                return _productos.Find(Producto => true).ToList();
+            }
+            catch (Exception e)
+            {
+                throw new BusinessException(e.ToString());
+            }
+
         }
 
         public Producto Get(string id)
         {
-            return _productos.Find<Producto>(Producto => Producto.Id == id).FirstOrDefault();
+            try
+            {
+                return _productos.Find<Producto>(Producto => Producto.Id == id).FirstOrDefault();
+            }
+            catch (Exception e)
+            {
+                throw new BusinessException(e.ToString());
+            }
+
         }
 
         public Producto Create(Producto Producto)
         {
-            _productos.InsertOne(Producto);
-            return Producto;
+            try
+            {
+                _productos.InsertOne(Producto);
+                return Producto;
+            }
+            catch (Exception e)
+            {
+                throw new BusinessException(e.ToString());
+            }
         }
 
         public void Update(string id, Producto ProductoIn)
         {
-            _productos.ReplaceOne(Producto => Producto.Id == id, ProductoIn);
+            try
+            {
+                _productos.ReplaceOne(Producto => Producto.Id == id, ProductoIn);
+            }
+            catch (Exception e)
+            {
+                throw new BusinessException(e.ToString());
+            }
         }
-        public Producto Update(Producto ProductoIn)
+        public bool Update(Producto ProductoIn)
         {
-            var id = ProductoIn.Id;
-            _productos.ReplaceOne(Producto => Producto.Id == id, ProductoIn);
-            return _productos.Find<Producto>(Producto => Producto.Id == id).FirstOrDefault();
+            try
+            {
+                var id = ProductoIn.Id;
+                _productos.ReplaceOne(Producto => Producto.Id == id, ProductoIn);
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw new BusinessException(e.ToString());
+            }
         }
 
         public bool Remove(Producto ProductoIn)
         {
-            _productos.DeleteOne(Producto => Producto.Id == ProductoIn.Id);
-            return true;
+            try
+            {
+                _productos.DeleteOne(Producto => Producto.Id == ProductoIn.Id);
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw new BusinessException(e.ToString());
+            }
         }
 
         public bool Remove(string id)
         {
-            _productos.DeleteOne(Producto => Producto.Id == id);
-            return true;
+            try
+            {
+                _productos.DeleteOne(Producto => Producto.Id == id);
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw new BusinessException(e.ToString());
+            }
         }
     }
 }
