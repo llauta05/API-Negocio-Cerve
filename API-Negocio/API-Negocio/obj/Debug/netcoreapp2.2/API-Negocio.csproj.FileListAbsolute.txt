@@ -3,7 +3,6 @@ C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\bin\De
 C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\bin\Debug\netcoreapp2.2\API-Negocio.runtimeconfig.dev.json
 C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\bin\Debug\netcoreapp2.2\API-Negocio.dll
 C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\bin\Debug\netcoreapp2.2\API-Negocio.pdb
-C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\obj\Debug\netcoreapp2.2\API-Negocio.csprojAssemblyReference.cache
 C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\obj\Debug\netcoreapp2.2\API-Negocio.csproj.CoreCompileInputs.cache
 C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\obj\Debug\netcoreapp2.2\API-Negocio.RazorAssemblyInfo.cache
 C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\obj\Debug\netcoreapp2.2\API-Negocio.RazorAssemblyInfo.cs
@@ -12,3 +11,4 @@ C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\obj\De
 C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\obj\Debug\netcoreapp2.2\API-Negocio.RazorTargetAssemblyInfo.cache
 C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\obj\Debug\netcoreapp2.2\API-Negocio.dll
 C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\obj\Debug\netcoreapp2.2\API-Negocio.pdb
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\API-Negocio\obj\Debug\netcoreapp2.2\API-Negocio.csprojAssemblyReference.cache

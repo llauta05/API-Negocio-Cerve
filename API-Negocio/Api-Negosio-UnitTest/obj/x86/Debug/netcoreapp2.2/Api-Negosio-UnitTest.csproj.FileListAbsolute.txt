@@ -1,0 +1,17 @@
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\bin\x86\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\bin\x86\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\bin\x86\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\bin\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.deps.json
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\bin\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.runtimeconfig.json
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\bin\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.runtimeconfig.dev.json
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\bin\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\bin\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.pdb
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\bin\x86\Debug\netcoreapp2.2\API-Negocio.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\bin\x86\Debug\netcoreapp2.2\API-Negocio.pdb
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\obj\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.csprojAssemblyReference.cache
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\obj\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\obj\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.AssemblyInfoInputs.cache
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\obj\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.AssemblyInfo.cs
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\obj\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.csproj.CopyComplete
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\obj\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negosio-UnitTest\obj\x86\Debug\netcoreapp2.2\Api-Negosio-UnitTest.pdb

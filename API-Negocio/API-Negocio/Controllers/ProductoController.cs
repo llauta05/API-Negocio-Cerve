@@ -1,5 +1,6 @@
 ﻿using API_Negocio.model;
 using API_Negocio.service;
+using API_Negocio.serviceContact;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,17 +13,17 @@ namespace API_Negocio.Controllers
     [ApiController]
     public class ProductoController : ControllerBase
     {
-        private readonly ProductoService _productoService;
+        private readonly IProductoService _IProductoService;
 
         public ProductoController(ProductoService productoService)
         {
-            _productoService = productoService;
+            this._IProductoService = productoService;
         }
 
         [HttpGet]
         public ActionResult<List<Producto>> Get()
         {
-            return _productoService.Get();
+            return _IProductoService.Get();
         }
      
         // GET api/values/5
@@ -30,26 +31,26 @@ namespace API_Negocio.Controllers
         [Route("GetById/")]
         public ActionResult<Producto> GetById(string id)
         {
-            return _productoService.Get(id);
+            return _IProductoService.Get(id);
         }
         [HttpPost]
         [Route("Create/")]
         public ActionResult<Producto> Create(Producto producto)
         {
-            return _productoService.Create(producto);
+            return _IProductoService.Create(producto);
         }
         [HttpPost]
         [Route("Delete/")]
         public ActionResult<bool> Delete(Producto producto)
         {
-            return _productoService.Remove(producto.Id);
+            return _IProductoService.Remove(producto.Id);
         }
 
         [HttpPut]
         [Route("Update/")]
         public ActionResult<bool> Update(Producto producto)
         {
-            return _productoService.Update(producto);
+            return _IProductoService.Update(producto);
         }
     }
 }

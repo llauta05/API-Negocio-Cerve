@@ -1,0 +1,14 @@
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\bin\Debug\netcoreapp2.1\Api-Negocio-UnitTest.deps.json
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\bin\Debug\netcoreapp2.1\Api-Negocio-UnitTest.runtimeconfig.json
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\bin\Debug\netcoreapp2.1\Api-Negocio-UnitTest.runtimeconfig.dev.json
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\bin\Debug\netcoreapp2.1\Api-Negocio-UnitTest.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\bin\Debug\netcoreapp2.1\Api-Negocio-UnitTest.pdb
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\obj\Debug\netcoreapp2.1\Api-Negocio-UnitTest.csprojAssemblyReference.cache
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\obj\Debug\netcoreapp2.1\Api-Negocio-UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\obj\Debug\netcoreapp2.1\Api-Negocio-UnitTest.AssemblyInfoInputs.cache
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\obj\Debug\netcoreapp2.1\Api-Negocio-UnitTest.AssemblyInfo.cs
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\obj\Debug\netcoreapp2.1\Api-Negocio-UnitTest.dll
+C:\Users\llandin\source\repos\API-Negocio-Cerve-1\API-Negocio\Api-Negocio-UnitTest\obj\Debug\netcoreapp2.1\Api-Negocio-UnitTest.pdb

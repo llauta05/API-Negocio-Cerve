@@ -1,18 +1,27 @@
 ﻿using Aggregates;
 using API_Negocio.model;
+using API_Negocio.serviceContact;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace API_Negocio.service
 {
-    public class ProductoService
+    public class ProductoService : IProductoService
     {
         private readonly IMongoCollection<Producto> _productos;
 
+        public ProductoService()
+        {
+            _productos.InsertOne(new Producto { Id = "asdlñ", Nombre = "asdadas", ml = 12, Precio = 102 });
+            _productos.InsertOne(new Producto { Id = "asdwqqlñ", Nombre = "test1", ml = 12, Precio = 11 });
+            _productos.InsertOne(new Producto { Id = "as111dlñ", Nombre = "feeewew", ml = 12, Precio = 33 });
+            _productos.InsertOne(new Producto { Id = "asd222lñ", Nombre = "asdada3232s", ml = 12, Precio = 44 });
+        }
         public ProductoService(IConfiguration config)
         {
             var client = new MongoClient(config.GetConnectionString("localhost"));
