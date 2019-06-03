@@ -17,7 +17,7 @@ namespace API_Negocio.model
         [BsonElement("real")]
         public int Real { get; set; }
         [BsonElement("previsto")]
-        public decimal Previsto{ get; set; }
+        public int Previsto{ get; set; }
 
 
     }

@@ -1,4 +1,5 @@
-﻿using API_Negocio.model;
+﻿using API_Negocio.Data;
+using API_Negocio.model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ namespace API_Negocio.serviceContact
 {
     public interface IStockService
     {
-        List<Stock> Get();
+        List<StockData> Get();
         Stock Get(string id);
         Stock Create(Stock stock);
         void Update(string id, Stock stock);

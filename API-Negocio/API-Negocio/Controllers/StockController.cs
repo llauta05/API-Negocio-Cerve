@@ -1,4 +1,5 @@
-﻿using API_Negocio.model;
+﻿using API_Negocio.Data;
+using API_Negocio.model;
 using API_Negocio.service;
 using API_Negocio.serviceContact;
 using Microsoft.AspNetCore.Mvc;
@@ -21,7 +22,7 @@ namespace API_Negocio.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Stock>> Get()
+        public ActionResult<List<StockData>> Get()
         {
             return _stockService.Get();
         }

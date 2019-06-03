@@ -1,4 +1,5 @@
 ﻿using Aggregates;
+using API_Negocio.Data;
 using API_Negocio.model;
 using API_Negocio.serviceContact;
 using Microsoft.Extensions.Configuration;
@@ -14,33 +15,56 @@ namespace API_Negocio.service
     {
 
         private readonly IMongoCollection<Stock> _stock;
+        private readonly ProductoService _ProductoService;
+
 
         public StockService()
         {
             _stock.InsertOne(new Stock { Id = "asdlñ", ProductoId = "5ce9b61e8f80d860bd36a67c", Previsto = 0, Real = 0 });
            
         }
-        public StockService(IConfiguration config)
+        public StockService(IConfiguration config, ProductoService productoService)
         {
             var client = new MongoClient(config.GetConnectionString("localhost"));
             var database = client.GetDatabase("BeerSys");
             _stock = database.GetCollection<Stock>("stock");
+            _ProductoService = productoService;
         }
         public Stock Create(Stock stock)
         {
             throw new NotImplementedException();
         }
 
-        public List<Stock> Get()
+        public List<StockData> Get()
         {
             try
             {
-                return _stock.Find(Producto => true).ToList();
+                var stocks = _stock.Find(x => true).ToList();
+                var listStock = new List<StockData>();
+
+                foreach(var stock in stocks)
+                {
+                    var newStock = new StockData() {
+                        NombreProducto = NombreProducto(stock.ProductoId),
+                        StockPrevisto = stock.Previsto,
+                        StockReal = stock.Real
+                    };
+                    listStock.Add(newStock);
+                }
+
+
+                return listStock;
             }
             catch (Exception e)
             {
                 throw new BusinessException(e.ToString());
             }
+        }
+
+        private string NombreProducto(string idProduct)
+        {
+            var nom = _ProductoService.Get().Where(prod => prod.Id == idProduct).Select(nombre => nombre.Nombre).FirstOrDefault();
+            return (nom != null) ? nom : "";
         }
 
         public Stock Get(string id)
