@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using API_Negocio.model;
 using API_Negocio.service;
+using API_Negocio.serviceContact;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API_Negocio.Controllers

@@ -13,11 +13,11 @@ namespace API_Negocio.Controllers
     [ApiController]
     public class ProductoController : ControllerBase
     {
-        private readonly IProductoService _IProductoService;
+        private readonly ProductoService _IProductoService;
 
         public ProductoController(ProductoService productoService)
         {
-            this._IProductoService = productoService;
+            _IProductoService = productoService;
         }
 
         [HttpGet]
