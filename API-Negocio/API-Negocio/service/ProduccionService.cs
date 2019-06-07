@@ -19,5 +19,10 @@ namespace API_Negocio.service
             var database = client.GetDatabase("BeerSys");
             _produccion = database.GetCollection<Produccion>("produccion");
         }
+
+        public List<Produccion> GetProduccions()
+        {
+            return _produccion.Find(Produccion => true).ToList();
+        }
     }
 }
