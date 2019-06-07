@@ -1,4 +1,5 @@
-﻿using API_Negocio.model;
+﻿using Aggregates;
+using API_Negocio.model;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using System;
@@ -18,6 +19,18 @@ namespace API_Negocio.service
             var client = new MongoClient(config.GetConnectionString("localhost"));
             var database = client.GetDatabase("BeerSys");
             _produccion = database.GetCollection<Produccion>("produccion");
+        }
+        public List<Produccion> Get()
+        {
+            try
+            {
+                return _produccion.Find(Produccion => false).ToList();
+            }
+            catch (Exception e)
+            {
+                throw new BusinessException(e.ToString());
+            }
+
         }
     }
 }
