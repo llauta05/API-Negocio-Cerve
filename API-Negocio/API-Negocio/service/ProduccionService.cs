@@ -23,6 +23,16 @@ namespace API_Negocio.service
             var database = client.GetDatabase("BeerSys");
             _produccion = database.GetCollection<Produccion>("produccion");
         }
+        public List<Produccion> Get()
+        {
+            try
+            {
+                return _produccion.Find(Produccion => false).ToList();
+            }
+            catch (Exception e)
+            {
+                throw new BusinessException(e.ToString());
+            }
 
     }
 }
