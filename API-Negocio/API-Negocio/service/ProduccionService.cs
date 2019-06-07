@@ -24,7 +24,7 @@ namespace API_Negocio.service
         {
             try
             {
-                return _produccion.Find(Produccion => false).ToList();
+                return _produccion.Find(Produccion => true).ToList();
             }
             catch (Exception e)
             {
