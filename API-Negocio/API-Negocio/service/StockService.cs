@@ -16,6 +16,7 @@ namespace API_Negocio.service
 
         private readonly IMongoCollection<Stock> _stock;
         private readonly ProductoService _ProductoService;
+        private readonly Quickstart _quickstart;
 
 
         public StockService()
@@ -23,12 +24,13 @@ namespace API_Negocio.service
             _stock.InsertOne(new Stock { Id = "asdlñ", ProductoId = "5ce9b61e8f80d860bd36a67c", Previsto = 0, Real = 0 });
            
         }
-        public StockService(IConfiguration config, ProductoService productoService)
+        public StockService(IConfiguration config, ProductoService productoService, Quickstart quickstart)
         {
             var client = new MongoClient(config.GetConnectionString("localhost"));
             var database = client.GetDatabase("BeerSys");
             _stock = database.GetCollection<Stock>("stock");
             _ProductoService = productoService;
+            _quickstart = quickstart;
         }
         public Stock Create(Stock stock)
         {

@@ -31,6 +31,7 @@ namespace API_Negocio
 
             services.AddScoped<StockService>();
             services.AddScoped<ProductoService>();
+            services.AddScoped<Produccion>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
