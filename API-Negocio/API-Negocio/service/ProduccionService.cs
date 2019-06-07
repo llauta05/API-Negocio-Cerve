@@ -13,12 +13,16 @@ namespace API_Negocio.service
     {
 
         private readonly IMongoCollection<Produccion> _produccion;
-
+        /// <summary>
+        /// asdasdasdasdas
+        /// </summary>
+        /// <param name="config"></param>
         public ProduccionService(IConfiguration config)
         {
             var client = new MongoClient(config.GetConnectionString("localhost"));
             var database = client.GetDatabase("BeerSys");
             _produccion = database.GetCollection<Produccion>("produccion");
         }
+
     }
 }
