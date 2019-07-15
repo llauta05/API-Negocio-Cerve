@@ -17,22 +17,34 @@ namespace Api_Negosio_UnitTest
     [TestClass]
     public class UnitTest1
     {
-        //private IProductoService _productoService;
-        //public UnitTest1()
-        //{
-        //    _productoService = new IProductoService();
-        //}
+        private readonly IProductoService _service;
+        private readonly ProductoController productoController;
 
-        //[TestMethod]
-        //public void GetProductos()
-        //{
-        //    var controller = new ProductoController(_productoService);
-        //    var response = controller.Get();
+        public UnitTest1()
+        {
+            _service = new ProductoService();
+            productoController = new ProductoController(_service);
+        }
 
-        //    //Assert.IsInstanceOfType(response, typeof(OkObjectResult));
-        //    //       Assert.IsInstanceOfType((response as OkObjectResult).Value, typeof(IMongoCollection<Producto>));
-        //    //          Assert.AreEqual(6, ((response as OkObjectResult).Value as IMongoCollection<Producto>));
-        //}
+        [TestMethod]
+        public void GetProductos()
+        {
+            // Act
+            var okResult = productoController.Get();
+
+            // Assert
+            //Assert.IsType<OkObjectResult>(okResult.Result);
+            //var response = servicio.Get();
+
+            Assert.IsInstanceOfType(okResult, typeof(OkObjectResult));
+
+            //    var controller = new ProductoController(_productoService);
+            //    var response = controller.Get();
+
+            //    //Assert.IsInstanceOfType(response, typeof(OkObjectResult));
+            //    //       Assert.IsInstanceOfType((response as OkObjectResult).Value, typeof(IMongoCollection<Producto>));
+            //    //          Assert.AreEqual(6, ((response as OkObjectResult).Value as IMongoCollection<Producto>));
+        }
 
 
     }

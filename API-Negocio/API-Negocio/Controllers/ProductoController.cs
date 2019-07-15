@@ -13,9 +13,9 @@ namespace API_Negocio.Controllers
     [ApiController]
     public class ProductoController : ControllerBase
     {
-        private readonly ProductoService _IProductoService;
+        private readonly IProductoService _IProductoService;
 
-        public ProductoController(ProductoService productoService)
+        public ProductoController(IProductoService productoService)
         {
             _IProductoService = productoService;
         }
