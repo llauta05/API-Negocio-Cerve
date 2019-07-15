@@ -17,9 +17,9 @@ namespace API_Negocio.service
 
         public ProductoService()
         {
-            _productos.InsertOne(new Producto { Id = "asdlñ", Nombre = "asdadas", ml = 12, Precio = 102 });
-            _productos.InsertOne(new Producto { Id = "asdwqqlñ", Nombre = "test1", ml = 12, Precio = 11 });
-            _productos.InsertOne(new Producto { Id = "as111dlñ", Nombre = "feeewew", ml = 12, Precio = 33 });
+            _productos.InsertOne(new Producto { Id = "lautaro", Nombre = "asdadas", ml = 12, Precio = 102 });
+            _productos.InsertOne(new Producto { Id = "Landin", Nombre = "test1", ml = 12, Precio = 11 });
+            _productos.InsertOne(new Producto { Id = "LLLLLLL", Nombre = "feeewew", ml = 12, Precio = 33 });
             _productos.InsertOne(new Producto { Id = "asd222lñ", Nombre = "asdada3232s", ml = 12, Precio = 44 });
         }
         public ProductoService(IConfiguration config)
