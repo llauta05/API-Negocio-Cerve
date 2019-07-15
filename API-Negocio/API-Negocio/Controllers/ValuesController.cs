@@ -28,7 +28,7 @@ namespace API_Negocio.Controllers
 
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<string>> Geaaat()
         {
             return new string[] { "value1", "asdsssss" };
         }
