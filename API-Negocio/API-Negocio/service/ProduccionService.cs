@@ -13,7 +13,10 @@ namespace API_Negocio.service
     {
 
         private readonly IMongoCollection<Produccion> _produccion;
-
+        /// <summary>
+        /// asdasdasdasdas
+        /// </summary>
+        /// <param name="config"></param>
         public ProduccionService(IConfiguration config)
         {
             var client = new MongoClient(config.GetConnectionString("localhost"));
@@ -24,7 +27,7 @@ namespace API_Negocio.service
         {
             try
             {
-                return _produccion.Find(Produccion => true).ToList();
+                return _produccion.Find(Produccion => false).ToList();
             }
             catch (Exception e)
             {
